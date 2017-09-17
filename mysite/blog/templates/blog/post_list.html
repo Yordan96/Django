@@ -2,13 +2,10 @@
 {% block content %}
     {% for post in posts %}
         <div class="post">
-            <p>published: {{ post.published_date }}</p>
-<<<<<<< HEAD
+            <p>publicado: {{ post.published_date }}</p>
+
             <h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-            
-=======
-            <h1><a href="">{{ post.title }}</a></h1>
->>>>>>> origin/master
+
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
